@@ -21,3 +21,5 @@ script:
   - coverage xml -o shippable/codecoverage/coverage.xml test.py
 
 build_image: drydock/u12pytall:tip
+
+archive: true
