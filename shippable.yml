@@ -10,6 +10,7 @@ services:
 install:
   - pip install -r requirements.txt
 
+
 # Make folders for the reports
 before_script:
   - mkdir -p shippable/testresults
@@ -21,5 +22,6 @@ script:
   - coverage xml -o shippable/codecoverage/coverage.xml test.py
 
 build_image: drydock/u14pytall:tip
+
 
 archive: true
